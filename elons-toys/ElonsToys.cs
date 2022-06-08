@@ -4,15 +4,10 @@ class RemoteControlCar
 {
     int distance = 0;
     int battery = 100;
-    public static RemoteControlCar Buy()
-    {
-        return new RemoteControlCar();
-    }
 
-    public string DistanceDisplay()
-    {
-        return $"Driven {distance} meters";
-    }
+    public static RemoteControlCar Buy() => new RemoteControlCar();
+
+    public string DistanceDisplay() => $"Driven {distance} meters";
 
     public string BatteryDisplay()
     {
